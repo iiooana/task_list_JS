@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script type="text/javascript" defer="true" src="js/general.js"></script>
+</head>
+<body>
+
+    <div class="container mt-3 mb-4">
+        <h1>Todo list</h2>
+        <div class="card">
+            <div class="card-body">
+                <h3>Add new task</h3>
+                <form action="?" onsubmit="return addNewTask(this)">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name="task" id="task" placeholder="list of todo task" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary">Add new Task</button>
+                            <button type="button" class="btn btn-danger" onclick="deleteCompleteTask()">Delete all task already complete</button>
+                        </div>
+                    </div>                
+                </form>
+                <ol id="ul_list_task" class="mt-3 text-uppercase"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!--region script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+ 
+    <!--endregion-->
+</body>
+
+</html>
